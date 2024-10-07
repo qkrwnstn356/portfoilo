@@ -41,7 +41,7 @@ const Main = (BodyProps) => {
       <div>
         <p>스킬 : HTML, CSS, Javasctipt, ECMA6, React, fullCalendar, StyledComponent, Toast UI </p>
         <p>Repository : GitHub, Netlify </p>
-        <p>Salesforce : LWC, AURA Component, VisualForce </p>
+        <p>Salesforce : LWC, AURA Component, VisualForce  test test</p>
       </div>
     </div>
   </Wrapper>
