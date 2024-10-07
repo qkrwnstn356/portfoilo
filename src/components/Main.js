@@ -5,13 +5,16 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
     display: flex;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
+    width: inherit;
+    height: 715px;
     background-color: #000;
     color: #fff;
+    > div {
+      padding: 40px;
+    }
     > div:first-child {
       flex: 1;
+      border-right: 1px solid #fff;
     }
     > div:nth-child(2) {
       flex: 1.5;

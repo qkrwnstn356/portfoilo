@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.header`
-    width: 100%;
+    width: inherit;
     height: 40px;
     padding: 10px 40px;
     background-color: gray;
@@ -10,7 +10,9 @@ const Wrapper = styled.header`
 const Header = () => {
  return (
     <Wrapper>
-        <h1>Header</h1>
+        <div>
+            <h1>Header</h1>
+        </div>
     </Wrapper>
  );
 };

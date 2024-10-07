@@ -1,10 +1,7 @@
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import styled from 'styled-components'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-
-const Position = styled.div `position: relative; height: 100vh;`;
 
 const BodyProps = {
   name: "박준수",
@@ -30,14 +27,13 @@ const router = createBrowserRouter([
 
 function App() {
 
-
   return (<>
-    <Position>
+    <div>
       <Header></Header>
       <RouterProvider router={router} /> {/* 라우터 제공 */}
       {/* <Main {...BodyProps}></Main> */}
       <Footer></Footer>
-    </Position>
+    </div>
   </>);
 }
 
