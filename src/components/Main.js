@@ -39,9 +39,9 @@ const Main = (BodyProps) => {
     </div>
     <div>
       <div>
-        <p>스킬 : HTML, CSS, Javasctipt, ECMA6, React, fullCalendar, StyledComponent </p>
+        <p>스킬 : HTML, CSS, Javasctipt, ECMA6, React, fullCalendar, StyledComponent, Toast UI </p>
         <p>Repository : GitHub, Netlify </p>
-        <p>Salesforce : LWC, AURA Component, VisualForce, 12312312 </p>
+        <p>Salesforce : LWC, AURA Component, VisualForce </p>
       </div>
     </div>
   </Wrapper>
