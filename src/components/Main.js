@@ -63,9 +63,9 @@ const Main = (BodyProps) => {
           <dd>{skillsWrap.map((item, idx) => { return <span key={item.id}> {idx === skillsWrap.length - 1 ? `${item.name}` : `${item.name}, `} </span> })}</dd>
           
         </dl>
-        {/* <p>스킬 : HTML, CSS, Javasctipt, ECMA6, React, fullCalendar, StyledComponent, Toast UI </p>
+        <p>스킬 : HTML, CSS, Javasctipt, ECMA6, React, fullCalendar, StyledComponent, Toast UI </p>
         <p>Repository : GitHub, Netlify </p>
-        <p>Salesforce : LWC, AURA Component, VisualForce  test test</p> */}
+        <p>Salesforce : LWC, AURA Component, VisualForce  test test</p>
       </section>
     </div>
   </Wrapper>
