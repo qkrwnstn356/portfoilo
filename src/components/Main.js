@@ -27,16 +27,40 @@ const Wrapper = styled.div`
 `;
 
 const Main = (BodyProps) => {
-  const skillsWrap = [
-    {name : 'HTML', img : '', id: 0},
-    {name : 'CSS', img : '', id: 1},
-    {name : 'Javasctipt', img : '', id: 2},
-    {name : 'ECMA6', img : '', id: 3},
-    {name : 'React', img : '', id: 4},
-    {name : 'StyledComponent', img : '', id: 5},
-    {name : 'fullCalendar', img : '', id: 6},
-    {name : 'Toast UI', img : '', id: 7},
-  ]
+
+  const data = {
+    skillsWrap: [{
+        title: 'skill',
+        skilList: [
+          {name : 'HTML', img : '', id: 0},
+          {name : 'CSS', img : '', id: 1},
+          {name : 'Javasctipt', img : '', id: 2},
+          {name : 'ECMA6', img : '', id: 3},
+          {name : 'React', img : '', id: 4},
+          {name : 'StyledComponent', img : '', id: 5},
+          {name : 'fullCalendar', img : '', id: 6},
+          {name : 'Toast UI', img : '', id: 7}
+        ]
+      },
+      {
+        title: 'Repository',
+        skilList: [
+          {name : 'GitHub', img : '', id: 0},
+          {name : 'Netlify', img : '', id: 1}
+        ]
+      },
+      {
+        title: 'Salesforce',
+        skilList: [
+          {name : 'LWC', img : '', id: 0},
+          {name : 'AURA Component', img : '', id: 1},
+          {name : 'VisualForce', img : '', id: 2}
+        ]
+      },
+    ]
+  };
+
+  console.log('data', data)
   const BodyPropsList = utils.clone(BodyProps.favorList);
   const [state, setState] = useState({name: "박준수z", gender: "남자"});
 
@@ -58,14 +82,12 @@ const Main = (BodyProps) => {
     </div>
     <div>
       <section>
-        <dl>
-          <dt>Skils</dt>
-          <dd>{skillsWrap.map((item, idx) => { return <span key={item.id}> {idx === skillsWrap.length - 1 ? `${item.name}` : `${item.name}, `} </span> })}</dd>
-          
-        </dl>
-        <p>스킬 : HTML, CSS, Javasctipt, ECMA6, React, fullCalendar, StyledComponent, Toast UI </p>
-        <p>Repository : GitHub, Netlify </p>
-        <p>Salesforce : LWC, AURA Component, VisualForce  test test</p>
+          {data.skillsWrap.map((item, index) => (
+            <dl>
+                <dt key={index}>{item.title}</dt>
+                <dd>{item.skilList.map((it, idx) => (<span key={idx}>  {idx === item.skilList.length - 1 ? `${it.name}` : `${it.name}, `} </span>))}</dd>
+            </dl>
+          ))}
       </section>
     </div>
   </Wrapper>
