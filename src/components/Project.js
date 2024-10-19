@@ -20,7 +20,7 @@ const Project = ({proj}) => {
                 <li>{index+1}. {item.title} ( {item.startDate} ~ {item.endDate} )</li>
                 {item.taskList.map((tl, idx) => { return <li key={idx}>{tl.task}</li> })}
                 <li>[ 사용한 개발 스킬 : {item.skills.map((sl, idx) => {
-                    return (idx == item.skills.length - 1) ? <span key={idx}>{sl.name}</span> : <span key={idx}>{sl.name}, </span>  
+                    return (idx === item.skills.length - 1) ? <span key={idx}>{sl.name}</span> : <span key={idx}>{sl.name}, </span>  
                   })} ]
                 </li>
               </ul>
