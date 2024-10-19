@@ -9,9 +9,6 @@ const router = createBrowserRouter([
     // element: <Layout />, // 공통 레이아웃
     children: [
       { path: "/", element: <Main/> },
-      // { path: "/login", element: <LoginPage /> },
-      // { path: "/detail/:id", element: <DetailPage /> },
-      // { path: "/profile", element: <MyProfile /> },
     ],
   },
 ]);
@@ -20,10 +17,7 @@ function App() {
 
   return (<>
     <div>
-      {/* <Header></Header> */}
       <RouterProvider router={router} /> {/* 라우터 제공 */}
-      {/* <Main {...BodyProps}></Main> */}
-      {/* <Footer></Footer> */}
     </div>
   </>);
 }
